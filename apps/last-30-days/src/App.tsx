@@ -31,7 +31,7 @@ function isKnownSource(source: string): source is SourceId {
 }
 
 export default function App() {
-  const [topic, setTopic] = useState("")
+  const [topic, setTopic] = useState(SAMPLE_TOPIC)
   const [submitted, setSubmitted] = useState<string | null>(null)
   const [sourceFilter, setSourceFilter] = useState<SourceId | "all">("all")
 

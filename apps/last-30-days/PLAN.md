@@ -10,6 +10,7 @@ Single-user demo of the Last 30 Days idea: enter a topic, see a “past 30 days 
 - Bun runtime; `bun install && bun run dev` works from that folder
 - Topic input + sample brief UI (X / Reddit / YouTube / GitHub / HN sections)
 - Fixed sample JSON shaped like last30days-skill agent export schema 1.4 (`src/data/sample-brief.json`); no live scraping
+- Sample topic is 「AI赚钱项目」, and the topic field defaults to it
 - shadcn/ui minimalist preset: Sera (`radix-sera` in `components.json`)
 - Chinese UI copy; single-user only
 

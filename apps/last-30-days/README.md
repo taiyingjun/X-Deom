@@ -4,7 +4,7 @@
 
 数据是固定样例 `src/data/sample-brief.json`，字段对齐 [last30days-skill](https://github.com/mvanhorn/last30days-skill) 的 agent JSON export（schema 1.4）。这一版不联网抓取。
 
-内置样例主题是 `AI coding agents`。输入别的主题时，页面会说明没有对应样例，并仍展示这一份，方便看版式。
+内置样例主题是「AI赚钱项目」，打开页面时输入框里就是这六个字。输入别的主题时，页面会说明没有对应样例，并仍展示这一份，方便看版式。
 
 ## 运行
 
