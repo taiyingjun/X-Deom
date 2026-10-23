@@ -163,9 +163,11 @@ export default function App() {
                 <Card key={cluster.title} size="sm">
                   <CardHeader>
                     <CardTitle>{cluster.title}</CardTitle>
-                    <CardDescription>
-                      {cluster.sources.map(sourceName).join(" · ")} · 互动{" "}
-                      {formatCount(cluster.engagement_total)}
+                    <CardDescription className="flex flex-col gap-1">
+                      <span>{cluster.sources.map(sourceName).join(" · ")}</span>
+                      <span className="whitespace-nowrap">
+                        互动 {formatCount(cluster.engagement_total)}
+                      </span>
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
