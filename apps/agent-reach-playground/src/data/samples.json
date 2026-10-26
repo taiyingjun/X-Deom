@@ -1,0 +1,202 @@
+{
+  "channels": [
+    {
+      "id": "v2ex",
+      "label": "V2EX 热帖",
+      "hint": "公开 JSON 接口上的热门主题。这条渠道不需要登录。",
+      "command": "agent-reach v2ex hot --limit 5",
+      "response": {
+        "schema_version": 1,
+        "ok": true,
+        "channel": "v2ex",
+        "action": "hot",
+        "backend": "v2ex-api",
+        "items": [
+          {
+            "title": "创业一年了，还活着",
+            "url": "https://www.v2ex.com/t/1251768",
+            "author": "BerniLin",
+            "published_at": "2026-10-26T01:32:58+00:00",
+            "text": "作者说创业一年还在运转。这一年大多在救火，准备把业绩和过程记下来，跟大家分享。",
+            "raw": {
+              "node": "职场话题",
+              "replies": 126
+            }
+          },
+          {
+            "title": "有件事我搞不明白， V 站为何不升级一下交互和 UI？然后出一个官方的 APP？",
+            "url": "https://www.v2ex.com/t/1251696",
+            "author": "Veliqo",
+            "published_at": "2026-10-25T14:02:39+00:00",
+            "text": "提问为什么 V2EX 不自己改交互、做官方 App。社区里已经有不少油猴脚本、浏览器插件和第三方客户端。",
+            "raw": {
+              "node": "V2EX",
+              "replies": 79
+            }
+          },
+          {
+            "title": "国产《长虹》安卓电视机 不支持开通 ADB",
+            "url": "https://www.v2ex.com/t/1251745",
+            "author": "shiyuanGame",
+            "published_at": "2026-10-26T00:56:18+00:00",
+            "text": "一台长虹安卓电视桌面广告很多。作者想换启动器，但工厂模式藏起了 ADB，客服也不给权限。",
+            "raw": {
+              "node": "Android",
+              "replies": 77
+            }
+          },
+          {
+            "title": "Mac mini M6 价格彻底崩了",
+            "url": "https://www.v2ex.com/t/1251751",
+            "author": "Geon97",
+            "published_at": "2026-10-26T01:10:37+00:00",
+            "text": "作者对比了 Mac mini M6 在拼多多和京东官旗的价格，问现在入手还是再等等。",
+            "raw": {
+              "node": "Mac mini",
+              "replies": 67
+            }
+          },
+          {
+            "title": "来聊聊大家第一次被 AI 真正震撼到的瞬间吧",
+            "url": "https://www.v2ex.com/t/1251765",
+            "author": "phpdever",
+            "published_at": "2026-10-26T01:32:35+00:00",
+            "text": "作者想听大家第一次被 AI 震住的时刻。他自己是在 Coding Agent 夜里自动跑通一段逻辑的时候。",
+            "raw": {
+              "node": "问与答",
+              "replies": 59
+            }
+          }
+        ],
+        "meta": {
+          "sample": true,
+          "captured_at": "2026-10-26T08:05:00+00:00",
+          "query": "hot --limit 5",
+          "note": "五条热帖摘自当时的公开热门列表，正文换成了短摘要。页面再次打开时仍读这份 JSON。"
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "bilibili",
+      "label": "Bilibili 搜索",
+      "hint": "搜索公开视频。字幕需要扫码登录，这一版只放搜索结果卡片。",
+      "command": "agent-reach bilibili search \"Claude Code\" --limit 3",
+      "response": {
+        "schema_version": 1,
+        "ok": true,
+        "channel": "bilibili",
+        "action": "search",
+        "backend": "bili-cli",
+        "items": [
+          {
+            "title": "Claude Agent SDK 完整教程 — Thariq Shihipar, Anthropic",
+            "url": "https://www.bilibili.com/video/BV1UErYBCENX/",
+            "author": null,
+            "published_at": "2026-01-13T16:00:00+08:00",
+            "text": "一场公开课，讲 Claude Agent SDK 怎么把智能体做成收集上下文、执行、再验证的循环，并演示用 Bash 和文件系统撑起长任务。",
+            "raw": {
+              "bvid": "BV1UErYBCENX",
+              "duration": "1:52:25"
+            }
+          },
+          {
+            "title": "如何精通 Claude Code | Anthropic 官方 7 小时课程",
+            "url": "https://www.bilibili.com/video/BV1nczpBbEgx/",
+            "author": null,
+            "published_at": "2026-01-22T13:45:48+08:00",
+            "text": "Anthropic 官方长课程的中文介绍，从 Claude Code 的基本操作讲到官方建议的用法。样例卡片只有标题和简介。",
+            "raw": {
+              "bvid": "BV1nczpBbEgx",
+              "duration": null
+            }
+          },
+          {
+            "title": "吴恩达《Agent Skills with Anthropic》",
+            "url": "https://www.bilibili.com/video/BV1J7EM6BEGP/",
+            "author": null,
+            "published_at": "2026-06-08T15:30:07+08:00",
+            "text": "多集课程，讲技能和工具、MCP、子代理的差别，以及怎么做自定义技能。这是搜索卡片，没有字幕。",
+            "raw": {
+              "bvid": "BV1J7EM6BEGP",
+              "duration": null
+            }
+          }
+        ],
+        "meta": {
+          "sample": true,
+          "captured_at": "2026-10-26T08:05:00+00:00",
+          "query": "Claude Code",
+          "note": "三条公开视频的搜索卡片。字幕属于登录能力，没有放进这份样例。"
+        },
+        "error": null
+      }
+    },
+    {
+      "id": "github",
+      "label": "GitHub 读仓",
+      "hint": "读取一个公开仓库的 README 和文件摘要。不需要登录。",
+      "command": "agent-reach read https://github.com/Panniantong/Agent-Reach",
+      "response": {
+        "schema_version": 1,
+        "ok": true,
+        "channel": "github",
+        "action": "read",
+        "backend": "gh",
+        "items": [
+          {
+            "title": "README.md",
+            "url": "https://github.com/Panniantong/Agent-Reach/blob/main/README.md",
+            "author": "Panniantong",
+            "published_at": null,
+            "text": "项目把自己说成 CLI agent 的互联网入口：一条命令读多个平台，默认打印一个 JSON 对象。中文 README 说明安装、默认渠道和只读边界。",
+            "raw": {
+              "path": "README.md",
+              "repo": "Panniantong/Agent-Reach"
+            }
+          },
+          {
+            "title": "docs/README_en.md",
+            "url": "https://github.com/Panniantong/Agent-Reach/blob/main/docs/README_en.md",
+            "author": "Panniantong",
+            "published_at": null,
+            "text": "英文说明把渠道分成 default、optional、experimental。GitHub、V2EX 和 Bilibili 搜索属于装好就能用的公开能力。",
+            "raw": {
+              "path": "docs/README_en.md",
+              "repo": "Panniantong/Agent-Reach"
+            }
+          },
+          {
+            "title": "llms.txt",
+            "url": "https://github.com/Panniantong/Agent-Reach/blob/main/llms.txt",
+            "author": "Panniantong",
+            "published_at": null,
+            "text": "给模型看的短说明。统一输出包含 schema_version、ok、channel、action、backend、items、meta、error。默认渠道有 web、youtube、github、v2ex、bilibili。",
+            "raw": {
+              "path": "llms.txt",
+              "repo": "Panniantong/Agent-Reach"
+            }
+          },
+          {
+            "title": "SKILL_en.md",
+            "url": "https://github.com/Panniantong/Agent-Reach/blob/main/agent_reach/skill/SKILL_en.md",
+            "author": "Panniantong",
+            "published_at": null,
+            "text": "技能文件要求只读。成功时内容在 items 里，每条有 title、url、author、published_at、text。失败时按 error.code 分支，例如 NEED_LOGIN。",
+            "raw": {
+              "path": "agent_reach/skill/SKILL_en.md",
+              "repo": "Panniantong/Agent-Reach"
+            }
+          }
+        ],
+        "meta": {
+          "sample": true,
+          "captured_at": "2026-10-26T08:05:00+00:00",
+          "query": "https://github.com/Panniantong/Agent-Reach",
+          "note": "公开仓库四个文件的摘要。正文是根据仓库说明改写的短句，不是文件原文。"
+        },
+        "error": null
+      }
+    }
+  ]
+}

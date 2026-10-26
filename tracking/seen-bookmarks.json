@@ -12,6 +12,16 @@
       "proposed_at": "2026-10-23T01:10:45.705992+00:00",
       "built_at": "2026-10-23T02:20:00+00:00",
       "app": "apps/last-30-days"
+    },
+    {
+      "id": "2113933745204207854",
+      "title": "Agent Reach (Panniantong/Agent-Reach)",
+      "url": "https://x.com/ozmazzz/status/2113933745204207854",
+      "repo": "https://github.com/Panniantong/Agent-Reach",
+      "slug": "agent-reach-playground",
+      "date": "2026-10-26",
+      "built_at": "2026-10-26T08:20:00+00:00",
+      "app": "apps/agent-reach-playground"
     }
   ],
   "note": "Seeded from first scout run; keep updating as demos are approved/skipped/built."
